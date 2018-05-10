@@ -23,11 +23,14 @@
             <div class="col-sm-4"></div>
            
             <div class="col-sm-4">
-                 <form class="form-signin" method="POST">
+                 <form class="form-signin" method="post">
                 
                 <h2 class="form-signin-heading">Please Login</h2>
             <div class="form-group">
 		  <!--<span class="input-group-addon" id="basic-addon1">@</span>-->
+             <input type="hidden" name="action" value="login">
+               <input type="hidden" name="method" value="dologin">
+                       
                 <label for="name">Username</label>
 		  <input type="text" name="username" class="form-control" placeholder="Username" required>
 		</div>
